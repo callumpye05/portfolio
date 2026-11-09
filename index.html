@@ -1,108 +1,136 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Callum Pye, a Software Architecture Master's student at Nantes Université, interested in backend and systems engineering. Explore my projects and technical skills.">
+    <title>Callum Pye — Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
-        <h1>Callum PYE</h1>
-        <p>Aspiring Backend Developer / Software Architecture Student</p>
-
-        <nav>
-            <a href="#about">about</a>
-            <a href="#projects">projects</a>
-            <a href="#skills">skills</a>
+    <header class="site-header container">
+        <a class="wordmark" href="#home" aria-label="Callum Pye, back to introduction">Callum Pye<span aria-hidden="true">.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <main>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                21 year old student at Nantes University in France. I'm currently in my first year of my Master's (Software Architecture).
-            </p>
-            <p>
-                I'm particularly interested in backend development, software architecture, security, and DevOps. I enjoy building systems with Java and Spring Boot and understanding how the different parts of an application interact, from the database and backend logic to deployment and security.
-            </p>
-            <p>
-                I'm currently developing Archivum, a long-term project that I use to improve my skills in backend engineering, architecture, security, DevOps, DataOps, and increasingly frontend development.
-            </p>
+    <main id="main" class="container" tabindex="-1">
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div>
+                <p class="eyebrow">Software architecture student</p>
+                <h1 id="hero-title">Callum Pye<span class="accent" aria-hidden="true">.</span></h1>
+                <p class="hero-statement">Backend development.<br>Systems thinking.</p>
+            </div>
+            <div class="hero-intro">
+                <p>I'm a first-year Master's student in Software Architecture at Nantes Université, with an interest in backend and systems engineering.</p>
+                <p class="muted">I'm looking for an internship where I can contribute, learn, and build on that foundation.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class ="projects-container">
-                <article class="project-card">
-                    <h3>Archivum Project</h3>
-                    <p> A worldbuilding platform for writers </p>
-                    <h4>Tech stack</h4>
-                    <ul>
-                        <li>Spring Boot & Java</li>
-                        <li>React</li>
-                        <li>Docker</li>
-                    </ul>
-                    <div class="project-links">
-                        <a class="project-button" href="example">Live Demo</a>
-                        <a class="project-button" href="example">GitHub</a>
+
+        <section id="about" class="about section" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2 id="about-title">Understanding the<br>whole system.</h2>
+            </div>
+            <div class="about-copy">
+                <p>At Nantes Université, I'm studying Software Architecture and developing my interests in backend engineering, security, and DevOps. I enjoy understanding how the database, application logic, and deployment fit together.</p>
+                <p>Archivum is where I put that curiosity into practice. This ongoing worldbuilding project gives me room to work with Java and Spring Boot, explore architecture, and develop my frontend skills.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2 id="projects-title">Projects I'm building.</h2>
+                <p class="section-intro">Two projects exploring different sides of software development.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card" aria-labelledby="archivum-title">
+                    <div class="project-meta"><span class="project-number" aria-hidden="true">01</span><p>Worldbuilding · Ongoing project</p></div>
+                    <h3 id="archivum-title">Archivum</h3>
+                    <p class="project-description">A worldbuilding platform for writers, focused on the software behind creating fictional worlds.</p>
+                    <div class="project-detail">
+                        <h4>Technical focus</h4>
+                        <p>Backend development with Java and Spring Boot, alongside React and Docker. I use Archivum to develop my understanding of architecture, security, and DevOps while expanding into frontend development.</p>
                     </div>
+                    <div class="project-stack">
+                        <h4>Stack</h4>
+                        <ul class="tags" aria-label="Archivum technology stack">
+                            <li>Java</li><li>Spring Boot</li><li>React</li><li>Docker</li>
+                        </ul>
+                    </div>
+                    <!-- ARCHIVUM_LINKS: Add GitHub and/or Live Demo links only when their public destinations are verified. -->
                 </article>
-                <article class="project-card">
-                    <h3>Graph Risk Engine Project</h3>
-                    <p> A Fraud detection project using Julia and python  </p>
-                    <h4>Tech stack</h4>
-                    <ul>
-                        <li>Julia</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                    </ul>
-                    <div class="project-links">
-                        <a class="project-button" href="example">Live Demo</a>
-                        <a class="project-button" href="example">GitHub</a>
+                <article class="project-card" aria-labelledby="risk-title">
+                    <div class="project-meta"><span class="project-number" aria-hidden="true">02</span><p>Fraud detection</p></div>
+                    <h3 id="risk-title">Graph Risk Engine</h3>
+                    <p class="project-description">A project exploring the problem of fraud detection through programming and data.</p>
+                    <div class="project-detail">
+                        <h4>Technical focus</h4>
+                        <p>Fraud-detection work using Julia and Python, with SQL in the project stack.</p>
+                    </div>
+                    <div class="project-stack">
+                        <h4>Stack</h4>
+                        <ul class="tags" aria-label="Graph Risk Engine technology stack">
+                            <li>Julia</li><li>Python</li><li>SQL</li>
+                        </ul>
                     </div>
                 </article>
             </div>
         </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-card">Spring Boot</div>
-                <div class="skill-card">Concurrency Management</div>
-                <div class="skill-card">Dockerization</div>
+
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <p class="eyebrow">Technical skills</p>
+                <h2 id="skills-title">My toolkit.</h2>
             </div>
-            
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list"><li>Java</li><li>Python</li><li>C++</li><li>SQL</li><li>TypeScript</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend &amp; Architecture</h3>
+                    <ul class="skill-list"><li>Spring Boot</li><li>Spring Security</li><li>REST APIs</li><li>JPA/Hibernate</li><li>Concurrency</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Data &amp; Databases</h3>
+                    <ul class="skill-list"><li>MySQL</li><li>PostgreSQL</li><li>Flyway</li><li>Neo4j</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>DevOps &amp; Testing</h3>
+                    <ul class="skill-list"><li>Docker</li><li>Git</li><li>GitHub Actions</li><li>JUnit</li><li>Mockito</li><li>Testcontainers</li></ul>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-    <h2>Contact</h2>
 
-    <form>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button class="submit-contact" type="submit">Send</button>
-    </form>
-</section>
-
-
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let's build something.</h2>
+            <p>Have an internship opportunity or a project in mind? I'd love to talk about how I could contribute.</p>
+            <div class="contact-links">
+                //todo 
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>© 2026 Callum Pye</p>
-    </footer>
 
+    <footer class="site-footer container">
+        <p>&copy; 2026 Callum Pye</p>
+        <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
     
-
+    </footer>
 </body>
-</html> 
+</html>
